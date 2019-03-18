@@ -17,8 +17,11 @@ private void queue(){
 	q.add("Penny");
 }
 public ArrayDeque<String> magicQueue(int cup) {
-	
-	
+	for (int i = 0; i < cup; i++) {	
+		String x=q.pollFirst();
+		q.addLast(x);
+		q.addLast(x);
+	}	
 	return q;
 }
 }
